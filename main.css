@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    cursor: default;
+}
+
+/****** DESKTOP START *******/
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER START */
+
+header{
+    margin: 0 0 100px 0;
+}
+
+header .container .menu{
+    position: absolute;
+    right: 0;
+    width: 35px;
+    height: 35px;
+
+    display: none;
+}
+
+header .container .menu .line{
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+}
+
+header .container .menu .line:not(:last-child){
+    margin: 0 0 7px 0;
+
+}
+
+header .container{
+    height: 80px;
+    position: relative;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container .travel .logo,
+header .container .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #35AFF4;
+}
+
+header .container .nav{
+    display: flex;
+    gap: 20px;
+}
+
+header .container .nav a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+
+header .container .login-container{
+    display: flex;
+    gap: 20px;
+}
+
+header .container .login-container .signup:hover,
+header .container .login-container div{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+header .container .login-container .login:hover,
+header .container .login-container .signup{
+    background-color: #000;
+    color: #fff;
+    transition: .3s;
+}
+
+
+/* HEADER END */
+
+
+
+
+/* MAIN START */
+
+.main{
+    margin: 0 0 100px 0;
+}
+
+.main .container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.main .container .info .title{
+    width: 570px;
+    font-size: 54px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.main .container .info .text{
+    width: 535px;
+    font-size: 18px;
+    color: #909090;
+}
+
+.main .container .ladno-container{
+    width: 545px;
+    height: 50px;
+    border: 1px solid #b4b4b4;
+    border-radius: 10px;
+}
+
+.main .container .ladno-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.main .container .ladno-container .yes{
+    width: 100%;
+    display: flex;
+}
+
+.main .container .ladno-container .yes .place,
+.main .container .ladno-container .yes .date{
+    width: 50%;
+    display: flex;
+    gap: 20px;
+}
+
+.main .container .ladno-container .yes div .content{
+    line-height: 24px;
+}
+
+.main .container .ladno-container .yes div .content .text{
+    color: #909090;
+}
+
+.main .container .ladno-container div .cover{
+    width: 25px;
+}
+
+.main .container .ladno-container .yes{
+    position: relative;
+}
+
+.main .container .ladno-container .yes .line{
+    background-color: #909090;
+    width: .3px;
+    height: 25px;
+    position: absolute;
+    inset: 50% 0 0 50%;
+    transform: translateY(-50%) translateX(-15px);
+}
+
+.main .container .ladno-container .search{
+    background-color: #35AFF4;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    width: 49px;
+    height: 49px;
+}
+
+
+/* MAIN END */
+
+
+    /* POPULAR START */
+
+.popular .container .heading{
+    width: 510px;
+}
+
+.popular .container .heading .title{
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+.popular .container .heading .text{
+    color: #909090;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.popular .container .grid{
+    padding: 70px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px
+}
+
+.popular .container .grid .card{
+    width: 300px;
+}
+
+.popular .container .grid .card .cover{
+    margin: 0 0 20px 0;
+}
+
+.popular .container .grid .card .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular .container .grid .card .content .left{
+    font-weight: 500;
+}
+
+.popular .container .grid .card .content .left .title{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.popular .container .grid .card .content .left .price .gray{
+    color: #909090;
+}
+
+.popular .container .grid .card .content .left .price .dollar{
+    color: #35AFF4;
+}
+
+.popular .container .grid .card .content .right .rating{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* POPULAR END */
+
+
+
+
+/* FOOTER START */
+
+footer{
+    background-color: #181818;
+    color: #fff;
+}
+
+footer .container{
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .travel{
+    width: 325px;
+}
+
+footer .container .travel .logo{
+    margin: 0 0 24px 0;
+}
+
+footer .container .travel .text{
+    line-height: 150%;
+    /* color: #fff; */
+}
+
+footer .container .more{
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .more .company,
+footer .container .more .help{
+    line-height: 48px;
+}
+
+footer .container .more div .title{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+/* FOOTER END */
+
+
+
+/****** DESKTOP END *******/
+
+
+
+
+
+
+
+
+
+
+/****** MOBILE START *******/
+
+@media screen and (max-width:400px){
+    .container {
+        width: 350px;
+    }
+
+    /* HEADER START */
+
+    header .container .nav,
+    header .container .login-container{
+        display: none;
+    }
+
+    header .container .menu{
+        display: block;
+    }
+
+    /* HEADER END */
+
+
+    /* MAIN START */
+
+    .main .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .container .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        transform: translateY(190px);
+    }
+
+    .main .container .info .title{
+        font-size: 22px;
+        width: 255px;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+    .main .container .info .text{
+        width: 290px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .main .container .img{
+        width: 280px;
+
+        transform: translateY(-250px);
+    }
+    .main .container .img img{
+        width: 100%;
+    }
+
+    .main .container .ladno-container{
+        width: 350px;
+        font-size: 14px;
+    }
+
+    .main .container .ladno-container .yes .line{
+        transform: translateY(-50%) translateX(-5px);
+    }
+
+    .main .container .ladno-container .yes .place,
+    .main .container .ladno-container .yes .date{
+        display: flex;
+        gap: 10px;
+    }
+
+    .main .container .ladno-container .yes div .content .text{
+        font-size: 12px;
+    }
+
+
+    /* MAIN END */
+
+
+
+    /* POPULAR START */
+
+    .popular .container .heading{
+        width: 350px;
+        text-align: center;
+    }
+
+    .popular .container .heading .title{
+        font-size: 22px;
+    }
+
+    .popular .container .heading .text{
+        font-size: 14px;
+    }
+
+    .popular .container .grid{
+        padding: 5px;
+        grid-template-columns: 1fr;
+        margin: 0 0 100px 0;
+    }
+
+    
+    .popular .container .grid .card .cover img,
+    .popular .container .grid .card{
+        width: 340px;
+    }
+
+    /* POPULAR END */
+
+
+
+    /* FOOTER START */
+
+    footer .container{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    footer .container .travel,
+    footer .container .more{
+        width: 100%;
+    }
+
+
+
+    /* FOOTER END */
+
+
+}
